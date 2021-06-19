@@ -523,7 +523,8 @@ color: black;
     display: grid;
     margin-right: 60px;
     margin-left: 30px;
-    margin-top: 70px;
+    margin-top: 150px;
+    margin-bottom: 20px;
     grid-template-columns: 300px;
     grid-template-rows: 200px 200px;
     grid-template-areas: "image""text";
@@ -591,6 +592,7 @@ color: black;
   .card{
     margin-left: 30px;
     margin-top: 160px;
+    margin-bottom: 20px;
   }
   .card#card1:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -602,6 +604,13 @@ color: black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
 }
+
+@media screen and (max-width: 400px){
+  .card{
+    margin-bottom: 20px;
+  }
+}
+
 
 
 /* ------------------------------------------------------SKILL PAGE-------------------------------------------------------------- */
@@ -623,7 +632,7 @@ section.skillpage{
   background-color: transparent;
   border: 2px solid rgba(11, 206, 255, 0.2);
   box-shadow: rgba(7, 236, 225, 0.678) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  min-width: 500px;
+  min-width: 390px;
   width: fit-content;
   display: flex;
   align-items: center;
@@ -632,11 +641,25 @@ section.skillpage{
 }
 
 
+
+
+
+
 .skillpage .box .skills{
   width: 350px;
   margin: 50px auto;
   color: white;
+  min-width: 150px;
 }
+@media screen and (max-width: 400px){
+  
+  .skillpage .box {
+    min-width: 267px;
+  }
+  .skillpage .box .skills{
+  width: 200px;
+  }
+  }
 
 .skillpage .box .skills h1 {
   text-align: center;
@@ -708,7 +731,7 @@ section.skillpage{
   background-color: transparent;
   border: 2px solid rgba(11, 206, 255, 0.2);
   box-shadow: rgba(7, 236, 225, 0.678) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  min-width: 500px;
+  min-width: 284px;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -972,6 +995,7 @@ border-bottom:1px solid black ;
       flex-direction: row;
       width: 100%;
       margin-left: -148px;
+      padding-left: 5px;
   }
 
   .container .contactForm {
@@ -983,5 +1007,30 @@ border-bottom:1px solid black ;
 
   .contactInfo ul .socialm {
       margin: 30px;
+  }
+}
+
+
+@media(max-width:400px){
+  .container .contactInfo ul.socialm{
+    right: 72px;
+  }
+  .container .contactInfo ul.info{
+    left: 20px;
+  }
+  .container .contactInfo h2{
+    padding-left: 10px;
+  }
+}
+@media(max-width:450px){
+
+  .container .contactInfo ul.socialm{
+    right: 70px;
+  }
+  .container .contactInfo ul.info{
+    left: 15px;
+  }
+  .container .contactInfo h2{
+    padding-left: 10px;
   }
 }
